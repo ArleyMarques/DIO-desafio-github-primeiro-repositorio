@@ -1,0 +1,67 @@
+TAG HTML	DESCRIÇÃO
+<article>	Representa um pedaço independente do conteúdo de um documento, como um texto, notícias, blog, fórum
+<aside>	Representa uma parte de conteúdo relacionado com a página
+<command>	Um botão, um radiobutton ou checkbox
+<details>	Descreve detalhes de um documento ou partes
+<summary>	Um caption ou sumário, dentro da tag <details>
+<figure>	Pode ser usado para associar uma legenda, como de um gráfico ou de vídeo
+<figcaption>	Legenda da figura de seção
+<footer>	Usado para indicação de um rodapé de documento ou seção, podendo incluir: data, autor, contatos e direitos autorais.
+<header>	Usado para introduzir um documento ou seção. Pode incluir o elemento <nav>
+<hgroup>	Usado em uma seção de títulos, usando <h1> para <h6>, onde o maior é o título principal da seção, e os outros são subtítulos
+<mark>	Destacar um texto
+<meter>	Medição. Usado somente quando há valor máximo e mínimo conhecido
+<nav>	Usado para uma seção de navegação (menu)
+<progress>	Progresso de uma tarefa.
+<ruby>	Anotações em Ruby
+<rt>	Explicação da anotação em Ruby
+<rp>	Para ser exibido em navegadores que não suportam Ruby
+<section>	Seção de um documento, como capítulos, cabeçalhos, rodapés ou outras seções do documento
+<time>	Definição de tempo ou data
+<wbr>	Quebra de palavra. Para definir uma oportunidade de quebra de linha
+Dentre os elementos os que compõem a estrutura de uma página são:
+
+<header> - define o cabeçalho da página ou de uma seção (não confundir com a tag <head>);
+<section> - define cada seção do conteúdo;
+<article> - define um item do conteúdo dentro da página ou da seção;
+<footer> - define o rodapé da página ou de uma seção;
+<nav> - define o conjunto de links que formam a navegação ;
+<aside> - defne o conteúdo relacionado ao artigo.
+
+Formulários
+
+Nos formulários é que são realizadas a grande parte das operações na internet. Preenchendo um cadastro, enviando um email, efetuando um pagamento,etc., ai estão os formulários.  O HTML5 trouxe novos recursos para tornar a operação e a experiência do usuário com formulário algo mais interessante.
+
+A seguir temos outros elementos do HTML5:
+
+color - mostra uma paleta de cores
+date - mostra no campo um calendário que permite a navegação entre meses e anos
+datetime - configura data e hora - Utilizado para agendamento de eventos, reuniões, etc.
+datetime-local - data e hora local
+email - Caso opte por validação, automaticamente o browser valida se o valor for um e-mail válido
+month - mostra no campo um calendário que permite a navegação entre meses e anos
+number - Com os atributos “min” e “Max” é possível entrar com um intervalo de valores possíveis e com o “step” é possível definir o valor para cada incremento
+range - usado como botão deslizante
+search - usado para pesquisas
+tel - Utilizado para entrada de dados de telefones
+time - usado para mostrar a hora
+url - Utilizado para entrada de variadas URLs. Por padrão o browser irá inserir o http:// como protocolo padrão
+week - mostra no campo um calendário que permite navegar entre meses e anos
+A implementação desses elementos é feito usando a seguinte sintaxe: <input type=“elemento” name=“nome_elemento”/>
+
+Os novos atributos do HTML5 são:
+
+Autocomplete - Se utilizado como "on", habilita o “autocompletar” nos campos;
+Novalidate - É um atributo booleano. Quando se encontra ativo, especifica que o formulário não deve ser validado quando submetido;
+Autofocus - Foca o campo no carregamento da página;
+Formaction - Substitui o atributo Action no formulário. Deve ser uma URL válida que define para onde enviar os dados quando o formulário for submetido;
+Formmethod - Substitui o atributo method do formulário. Define o método HTTP para o envio de dados para o URL de ação. Aceita "get", "post", "put" e "delete";
+Formnovalidate - Substitui o atributo "novalidate" no formulário. Se for colocado como "true", esse campo não será validado quando for submetido;
+Formtarget - Aceita "blank", "_self", "_parent" e "_top";
+Width e Height - Definem a largura e altura do campo do formulário. Podem ser utilizadas medidas em porcentagem e pixels;
+List - Referencia um elemento DataList. Caso tenha um elemento <li> com determinado ID, referencie esse ID;
+Multiple - Permite que o usuário selecione mais de um item;
+Pattern - Permite criar restrições por expressões regulares; Ex: <input pattern=”[0-9]{3}” name=”digito” required title=”Validação apenas para 3 dígitos”/>
+Placeholder - Define a ajuda para o usuário preencher o campo com os dados corretos;
+Step - Utilizado juntamente com os tipos "datetime", "time", "date", "datetime-local", "month", "week", "number", "range", definindo um intervalo numérico;
+Required - o atributo “required”, dentro de um elemento input torna o campo obrigatório e transfere para o browser a tarefa da validação do campo;
